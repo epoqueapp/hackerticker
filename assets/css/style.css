@@ -259,10 +259,10 @@ header {
 /*
 |--------------------------------------------------------------------------
 |  5.0 Welcome Content
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .welcome {
@@ -308,10 +308,10 @@ header {
 /*
 |--------------------------------------------------------------------------
 |  6.0 Services Content
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .services {
@@ -428,10 +428,10 @@ header {
 /*
 |--------------------------------------------------------------------------
 |  7.0 Main Content
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .main-wrap .divider {
@@ -493,10 +493,10 @@ header {
 /*
 |--------------------------------------------------------------------------
 |  8.0 Home - Quote - Blog - Portfolio
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .home-projects {
@@ -571,8 +571,8 @@ header {
 }
 
 #home-projects .owl-prev:hover, #home-projects .owl-next:hover, #home-quotes .flex-prev:hover, #home-quotes .flex-next:hover, #home-projects2 .owl-prev:hover, #home-projects2 .owl-next:hover, #home-projects3 .owl-prev:hover, #home-projects3 .owl-next:hover {
-    background-color: #f84f38;
-    border-color: #f84f38;
+    background-color: #1d1d37;
+    border-color: #1d1d37;
     color: #fff !important;
 }
 
@@ -641,7 +641,7 @@ header {
     font-size: 11px;
     margin: 0;
     text-align: center;
-    color: #f84f38;
+    color: #1d1d37;
     font-style: italic;
 }
 
@@ -681,10 +681,10 @@ header {
 /*
 |--------------------------------------------------------------------------
 |  9.0 Footer
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 footer {
@@ -799,10 +799,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  10.0 Portfolio
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .p-item-inner {
@@ -969,8 +969,8 @@ footer .container {
 }
 
 #s-prev:hover, #s-next:hover {
-    background-color: #f84f38;
-    border-color: #f84f38;
+    background-color: #1d1d37;
+    border-color: #1d1d37;
     color: #fff !important;
 }
 
@@ -1064,10 +1064,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  11.0 Home Styles & Typography
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 .home-blog-inner {
@@ -1181,7 +1181,7 @@ footer .container {
     font-size: 11px;
     margin: 0;
     text-align: center;
-    color: #f84f38;
+    color: #1d1d37;
     font-style: italic;
 }
 
@@ -1425,8 +1425,8 @@ footer .container {
 }
 
 #home-slider3 .owl-prev:hover, #home-slider3 .owl-next:hover {
-    background-color: #f84f38;
-    border-color: #f84f38;
+    background-color: #1d1d37;
+    border-color: #1d1d37;
     color: #fff !important;
 }
 
@@ -1790,10 +1790,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  12.0 Blog
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 
@@ -2184,10 +2184,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  13.0 Contact
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 
@@ -2347,8 +2347,8 @@ footer .container {
 }
 
 #post-slider .owl-prev:hover, #post-slider .owl-next:hover {
-    background-color: #f84f38;
-    border-color: #f84f38;
+    background-color: #1d1d37;
+    border-color: #1d1d37;
     color: #fff !important;
 }
 
@@ -2510,10 +2510,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  14.0 Modal
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 
@@ -2808,10 +2808,10 @@ footer .container {
 /*
 |--------------------------------------------------------------------------
 |  15.0 Responsive Styles
-|  
+|
 |--------------------------------------------------------------------------
 |
-| 
+|
 |
 */
 
