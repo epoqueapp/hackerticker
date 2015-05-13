@@ -12,13 +12,16 @@ var callbackUrl = process.env.NODE_ENV == "prod" ? "http://www.hackerticker.com/
 var TWITTER_CONSUMER_KEY = process.env.NODE_ENV == "prod" ? "Q3URyMneq4swr47v5Xs5pQU8e" : "SiRnNpKyTMu5g2d0064nN9jZ3";
 var TWITTER_CONSUMER_SECRET = process.env.NODE_ENV == "prod" ? "P6JAgcsRCETyQqeZSb8cIxXIumz5A2pFLLmuKv4C9ajqmmC8DG" : "FRk0jtWOcBn7T44xboeFFDcvhobOrdg9IwhLfV6yEz4VE3l8Fl";
 
+console.log('Twitter Consumer Key ' + TWITTER_CONSUMER_KEY);
+console.log('Twitter Consumer Secret ' + TWITTER_CONSUMER_SECRET);
+console.log('Twitter Callback ' + callbackUrl);
 
 module.exports = function (app) {
-
-    app.use(session({ secret: 'keyboard cat', cookie: { secure: true }}));
+    app.use(cookieParser());
+    app.use(session({ secret: 'keyboard cat', cookie: { secure: false }}));
     app.use(passport.initialize());
     app.use(passport.session());
-    app.use(cookieParser());
+
 
 
     passport.serializeUser(function(user, done) {
