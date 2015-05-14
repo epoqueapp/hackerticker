@@ -22,7 +22,11 @@ module.exports = function (app) {
     app.use(passport.initialize());
     app.use(passport.session());
 
-
+    app.use(function (req, res, next) {
+        console.log('Time:', Date.now());
+        app.locals.currentUser = req.user;
+        next();
+    });
 
     passport.serializeUser(function(user, done) {
         done(null, user);
@@ -38,13 +42,15 @@ module.exports = function (app) {
             callbackURL: callbackUrl
         },
         function (token, tokenSecret, profile, done) {
+            console.log(profile);
             User.findOneAndUpdateAsync({
                     twitterId: profile.id
                 },
                 {
                     $set: {
                         twitterId: profile.id,
-                        name: profile.name
+                        name: profile.displayName,
+                        twitterUsername: profile.username
                     }
                 },
                 {upsert: true}).then(function(user){

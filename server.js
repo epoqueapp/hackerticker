@@ -22,9 +22,10 @@ db.once('open', function (callback) {
     console.log("successfully connected to the mongodb instance");
 });
 
-require('./controllers/projectsController')(app);
 require('./controllers/loginController')(app);
+require('./controllers/projectsController')(app);
 require('./controllers/contactUsController')(app);
+require('./controllers/usersController')(app);
 
 var port = process.env.PORT || 3000;
 app.listen(port);

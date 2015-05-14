@@ -90,10 +90,17 @@
                             <li class='active'>
                                 <a href='/contact'><span>Contact Us</span></a>
                             </li>
+							{{#if currentUser}}
                             <li class='active'>
                                 <a href='/'><span>My Projects</span></a>
                             </li>
-                            <li class='last'><a href='/auth/twitter'><span>Login</span></a></li>
+							{{/if}}
+							{{#if currentUser}}
+                                <li class='last'><a href='/logout'><span>Logout</span></a></li>
+							{{else}}
+                                <li class='last'><a href='/auth/twitter'><span><i class="fa fa-twitter"></i> Login</span></a></li>
+							{{/if}}
+
                         </ul>
                     </div>
                 </div>

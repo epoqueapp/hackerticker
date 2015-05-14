@@ -7,7 +7,8 @@ var mongoose = require('mongoose');
 var userSchema = mongoose.Schema({
     name: String,
     email: {type: String},
-    twitterId: {type: String, require: true},
+    twitterId: {type: String, required: true},
+    twitterUsername: {type: String},
     createdOn: {default: Date.now, type: Date},
     role: {type: String, enum: ['admin', 'normal'], default: 'normal'}
 });
