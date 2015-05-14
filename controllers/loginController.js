@@ -23,7 +23,6 @@ module.exports = function (app) {
     app.use(passport.session());
 
     app.use(function (req, res, next) {
-        console.log('Time:', Date.now());
         app.locals.currentUser = req.user;
         next();
     });

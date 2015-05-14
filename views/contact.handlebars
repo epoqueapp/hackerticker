@@ -13,7 +13,14 @@
             <div class="row">
                 <div class="col-md-9">
                     <h4>Leave a Message</h4>
-
+					{{#if success}}
+                        <div id="successMessage" class="successmessage"><p><span class="success-ico"></span> Thanks for
+                            sending your message! We'll get back to you shortly.</p></div>
+					{{/if}}
+					{{#if error}}
+                        <div id="failureMessage" class="errormessage"><p><span class="error-ico"></span> There was a problem
+                            sending your message. Please try again.</p></div>
+					{{/if}}
                     <div class="space30"></div>
                     <form class="contact-form" id="contactForm" action="/contact" method="post">
                         <div class="row">
@@ -34,12 +41,6 @@
                         </button>
                         <br>
                     </form>
-                    <div id="successMessage" class="successmessage"><p><span class="success-ico"></span> Thanks for
-                        sending your message! We'll get back to you shortly.</p></div>
-                    <div id="failureMessage" class="errormessage"><p><span class="error-ico"></span> There was a problem
-                        sending your message. Please try again.</p></div>
-                    <div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form
-                        before sending.</p></div>
                 </div>
             </div>
         </div>
