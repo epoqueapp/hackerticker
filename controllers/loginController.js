@@ -18,12 +18,21 @@ console.log('Twitter Callback ' + callbackUrl);
 
 module.exports = function (app) {
     app.use(cookieParser());
-    app.use(session({ secret: 'keyboard cat', cookie: { secure: false }}));
+    app.use(session({ secret: 'keyboard cat', cookie: { secure: false, maxAge: 1.57785e10}, resave: true, saveUninitialized: true}));
     app.use(passport.initialize());
     app.use(passport.session());
 
     app.use(function (req, res, next) {
         app.locals.currentUser = req.user;
+        if(req.user){
+            if(req.user.role == "admin"){
+                app.locals.isAdmin = true;
+            }else{
+                app.locals.isAdmin = false;
+            }
+        }else{
+            app.locals.isAdmin = false;
+        }
         next();
     });
 
@@ -41,7 +50,6 @@ module.exports = function (app) {
             callbackURL: callbackUrl
         },
         function (token, tokenSecret, profile, done) {
-            console.log(profile);
             User.findOneAndUpdateAsync({
                     twitterId: profile.id
                 },

@@ -101,10 +101,8 @@
                                 <li class='last'><a href='/auth/twitter'><span><i class="fa fa-twitter"></i> Login</span></a></li>
 							{{/if}}
 
-							{{#if currentUser}}
-                                <li class='last'><a href='/logout'><span>Logout</span></a></li>
-							{{else}}
-                                <li class='last'><a href='/auth/twitter'><span><i class="fa fa-twitter"></i> Login</span></a></li>
+							{{#if isAdmin}}
+                                <li class='last'><a href='/logout'><span>Admin</span></a></li>
 							{{/if}}
                         </ul>
                     </div>
@@ -161,7 +159,7 @@
 <script src="/assets/js/jquery.gmap.js"></script>
 <script src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
 <script src="/assets/js/main.js"></script>
-
+<script src="/assets/js/knockout-3.3.0.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
